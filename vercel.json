@@ -9,5 +9,6 @@
 			"source": "/((?!api/.*).*)"
 		}
 	],
-	"$schema": "https://openapi.vercel.sh/vercel.json"
+	"$schema": "https://openapi.vercel.sh/vercel.json",
+	"bunVersion": "1.x"
 }

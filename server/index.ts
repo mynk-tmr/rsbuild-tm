@@ -10,7 +10,7 @@ if (!process.env.VERCEL) {
 }
 
 app.get('/hello', (c) => {
-	return c.text('Hello Hono!')
+	return c.text(`Hello from Bun v${process.versions.bun}`)
 })
 
 export default app

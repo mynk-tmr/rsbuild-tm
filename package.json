@@ -14,17 +14,15 @@
 		"makeapi": "bun build server/index.ts --outdir api --minify --target node"
 	},
 	"dependencies": {
-		"@tanstack/react-query": "^5.90.2",
-		"@tanstack/react-query-devtools": "^5.90.2",
 		"hono": "^4.9.10",
 		"react": "^19.2.0",
 		"react-dom": "^19.2.0",
 		"react-router": "^7.9.4"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.2.3",
 		"@rsbuild/core": "^1.5.14",
 		"@rsbuild/plugin-react": "^1.4.1",
+		"@types/bun": "^1.3.1",
 		"@types/node": "^24.7.1",
 		"@types/react": "^19.2.2",
 		"@types/react-dom": "^19.2.1",
