@@ -1,8 +1,11 @@
 import { Suspense, useRef } from 'react'
+import { Link, type RouteObject } from 'react-router'
+
+export const HOME: RouteObject = { Component: Home, path: '/home' }
 
 const base_url = import.meta.env.DEV ? 'http://localhost:3000' : ''
 
-export function Home() {
+function Home() {
 	const ref = useRef(
 		fetch(`${base_url}/api/hello`)
 			.then((res) => res.text())
@@ -17,7 +20,8 @@ export function Home() {
 				</Suspense>
 				<br />
 				<br />
-				Built with <mark>dev.css</mark> and <mark>rsbuild</mark>.
+				Built with <mark>dev.css</mark> and <mark>rsbuild</mark>. See 404 page{' '}
+				<Link to='/404'>here</Link>.
 			</article>
 		</div>
 	)
